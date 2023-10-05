@@ -1,6 +1,6 @@
 package dao;
 
-import org.example.Actor;
+import entity.Actor;
 import org.hibernate.SessionFactory;
 
 public class ActorDAO extends movieDAO<Actor> {

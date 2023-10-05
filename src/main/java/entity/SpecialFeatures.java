@@ -1,5 +1,4 @@
-package org.example;
-import lombok.Data;
+package entity;
 
 import static java.util.Objects.isNull;
 

@@ -1,6 +1,6 @@
 package dao;
 
-import org.example.Payment;
+import entity.Payment;
 import org.hibernate.SessionFactory;
 
 public class PaymentDAO extends movieDAO {

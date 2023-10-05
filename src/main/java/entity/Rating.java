@@ -1,4 +1,4 @@
-package org.example;
+package entity;
 
 public enum Rating {
     G("G"),

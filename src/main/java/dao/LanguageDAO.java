@@ -1,6 +1,6 @@
 package dao;
 
-import org.example.Language;
+import entity.Language;
 import org.hibernate.SessionFactory;
 
 public class LanguageDAO extends movieDAO {

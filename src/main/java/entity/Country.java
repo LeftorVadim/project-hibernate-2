@@ -1,31 +1,23 @@
-package org.example;
+package entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
 import org.hibernate.annotations.UpdateTimestamp;
-
 import java.time.LocalDateTime;
 
 @Entity
-@Table(schema = "movie", name = "store")
+@Table(schema = "movie", name = "country")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Data
-public class Store {
+public class Country {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "store_id")
-    Byte id;
-
-    @OneToOne
-    @JoinColumn(name = "manager_staff_id")
-    Staff staff;
-
-    @OneToOne
-    @JoinColumn(name = "address_id")
-    Address address;
-
+    @Column(name = "country_id")
+    Short id;
+    @Column(name = "country")
+    String country;
     @Column(name = "last_update")
     @UpdateTimestamp
     LocalDateTime lastUpdate;

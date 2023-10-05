@@ -1,4 +1,4 @@
-package org.example;
+package entity;
 
 import org.hibernate.cfg.Configuration;
 

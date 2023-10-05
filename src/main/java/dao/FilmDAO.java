@@ -1,6 +1,6 @@
 package dao;
 
-import org.example.Film;
+import entity.Film;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 

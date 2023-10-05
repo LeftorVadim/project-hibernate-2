@@ -1,7 +1,6 @@
-package org.example;
+package entity;
 
 import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.Convert;
 import jakarta.persistence.Converter;
 
 @Converter(autoApply = true)

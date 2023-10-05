@@ -1,4 +1,4 @@
-package org.example;
+package entity;
 
 import dao.*;
 import org.hibernate.Session;

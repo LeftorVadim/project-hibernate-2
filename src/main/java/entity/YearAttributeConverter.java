@@ -1,4 +1,4 @@
-package org.example;
+package entity;
 
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;

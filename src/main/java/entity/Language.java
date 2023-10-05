@@ -1,4 +1,4 @@
-package org.example;
+package entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -9,20 +9,16 @@ import org.hibernate.annotations.UpdateTimestamp;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(schema = "movie", name = "inventory")
+@Table(schema = "movie", name = "language")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Data
-public class Inventory {
+public class Language {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "inventory_id")
-    int id;
-    @ManyToOne
-    @JoinColumn(name = "film_id")
-    Film film;
-    @ManyToOne
-    @JoinColumn(name = "store_id")
-    Store store;
+    @Column(name = "language_id")
+    Byte id;
+    @Column(name = "name", columnDefinition = "char")
+    String name;
     @Column(name = "last_update")
     @UpdateTimestamp
     LocalDateTime lastUpdate;
